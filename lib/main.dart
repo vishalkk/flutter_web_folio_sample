@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vishal_web_folio/splash/presentation/pages/splash_page.dart';
 
 void main(){
 
@@ -16,7 +17,7 @@ class PortfolioApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Product Sans',
       ),
-      home: const SizedBox.shrink()
+      home: const SplashPage()
     );
   }
 }
