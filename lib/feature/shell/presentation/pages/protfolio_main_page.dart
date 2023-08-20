@@ -3,15 +3,15 @@ import 'package:vishal_web_folio/helpers/utils.dart';
 
 class PortfolioMainPage extends StatelessWidget {
     static const String route = '/main';
-
-  const PortfolioMainPage({super.key});
+final Widget child;
+  const PortfolioMainPage({super.key,required this.child});
 
   @override
   Widget build(BuildContext context) {
      return Scaffold(
       key: Utils.mainScaffold,
-      body: const Center(
-        child: Text('Main Page!')
+      body: Center(
+        child: child,
       )
      );
   }
